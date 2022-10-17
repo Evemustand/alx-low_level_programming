@@ -1,4 +1,4 @@
-#include <stdhio>
+#include <stdhio.h>
 
 /**
  * main - print letters in lowercase
