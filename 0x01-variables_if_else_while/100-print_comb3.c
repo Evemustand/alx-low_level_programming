@@ -6,25 +6,26 @@
  */
 int main(void)
 {
-	int ones;
-	int tens;
+	int ch;
+	int n;
 
-	for (tens = "0"; tens <= "9"; tens++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-		for (ones = "0"; ones <= "9"; ones++)
+		for (n = 49; n <= 57; n++)
 		{
-			if (!((ones == tens) || (tens > ones)))
+			if
+			      (	n > ch)
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == "9" && tens == "8"))
+				putchar(ch);
+				putchar(n);
+				if (ch != 56 || n != 57)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
